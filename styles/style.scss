@@ -1,0 +1,24 @@
+// BAISICS
+@import './breakpoints/breakpoints';
+@import './colors/colors';
+@import './typography/typography';
+@import './baisic/baisic';
+
+// ELEMENTS
+@import './elements/buttons';
+
+
+// COMPONENTS
+@import './components/navigation';
+@import './components/dashboard-home';
+@import './components/about';
+@import './components/ofert';
+@import './components/footer';
+@import './components/dashboard-ofert';
+@import './components/ofert-box';
+@import './components/dashboard-single-ofert';
+@import './components/ofert-content';
+@import './components/all-oferts';
+@import './components/contact';
+@import './components/faq';
+@import './components/contact-form';

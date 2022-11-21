@@ -1,0 +1,26 @@
+.ofert-content-section {
+    width: 100%;
+    margin: 80px 0;
+    &__text {
+        h3 {
+            font-size: 2.5rem;
+            margin: 30px 0 20px 0;
+        }
+        p {
+            margin-bottom: 10px;
+            padding: 0 20px;
+        }
+        .warning {
+            margin-top: 40px;
+            display: block;
+            font-size: 2.5rem;
+            color: #e64242;
+            font-weight: $font-bold;
+        }
+        ul {
+            margin-bottom: 10px;
+            padding: 0 30px;
+        }
+    }
+}
+

@@ -1,0 +1,95 @@
+.ofert-section {
+    width: 100%;
+    margin: 80px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        &--container {
+            width: 100%;
+            background-color: $color-white;
+            border-radius: 20px;
+            background-color: $color-white;
+            -webkit-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.35);
+            -moz-box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.35);
+            box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.35);
+            overflow: hidden;
+            display: flex;
+            .ofert-img {
+                width: 400px;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .text-container {
+                padding: 30px;
+                p {
+                    max-width: 600px;
+                    margin: 35px 0 35px 45px;
+                }
+                a {
+                    margin-left: 45px;
+                }
+            }
+            .ofert-1 {
+                background-image: url('../../assets/imgs/ofert/ofert-1.jpg');
+            }
+            .ofert-2 {
+                background-image: url('../../assets/imgs/ofert/ofert-2.jpg');
+            }
+            .ofert-3 {
+                background-image: url('../../assets/imgs/ofert/ofert-3.jpg');
+            }
+            .ofert-4 {
+                background-image: url('../../assets/imgs/ofert/ofert-4.jpg');
+            }
+        }
+        &--container:not(:last-child) {
+            margin-bottom: 40px;
+        }
+    }
+}
+
+@include break-point-down(tab) {
+    .ofert-section {
+        margin: 40px 0;
+        &__content {
+            &--container {
+                flex-direction: column;
+                .ofert-img {
+                    height: 300px;
+                    width: 100%;
+                }
+                .text-container {
+                    padding: 20px;
+                    p {
+                        max-width: 100%;
+                        margin: 35px 45px 35px 45px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@include break-point-down(mb) {
+    .ofert-section {
+        &__content {
+            &--container {
+                .ofert-img {
+                    height: 200px;
+                    width: 100%;
+                }
+                .text-container {
+                    padding: 20px;
+                    p {
+                        max-width: 100%;
+                        margin: 20px 0px 35px 0px;
+                    }
+                    a {
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}

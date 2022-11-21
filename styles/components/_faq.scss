@@ -1,0 +1,120 @@
+.faq-section {
+    padding: 50px 0;
+    &__content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &--accordion-item {
+            max-width: 1000px;
+            border: 2px solid $color-gray;
+            border-radius: 15px;
+            padding: 30px;
+            cursor: pointer;
+            .accordion-head {
+                display: flex;
+                align-items: center;
+                position: relative;
+                span {
+                    margin-right: 80px;
+                    font-weight: $font-bold;
+                    transition: .2s;
+                }
+                .icon {
+                    right: 10px;
+                    top: 0;
+                    width: 26px;
+                    height: 26px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    position: absolute;
+                    &-line {
+                        background-color: $color-dark;
+                        width: 100%;
+                        height: 4px;
+                        position: absolute;
+                        transition: .2s;
+                    }
+                    .icon-line.top {
+                        transform: rotate(90deg);
+                    }
+                }
+            }
+            .accordion-body {
+                display: none;
+            }
+        }
+        .accordion--active {
+            .accordion-body {
+                display: block;
+                margin-top: 20px;
+            }
+            .accordion-head {
+                span {
+                    color: $color-light-blue;
+                }
+                .icon {
+                    &-line {
+                        background-color: $color-light-blue;
+                    }
+                    .top {
+                        display: none;
+                    }
+                }
+            }
+        }
+        &--accordion-item:not(:last-child) {
+            margin-bottom: 20px;
+        }
+        &--additional-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            h2 {
+                margin: 25px 0;
+                padding: 0;
+                &::before {
+                    display: none;
+                }
+            }
+            span {
+                font-weight: $font-bold;
+            }
+            a {
+                margin-top: 35px;
+            }
+        }
+    }
+}
+
+@include break-point-down(mb) {
+    .faq-section {
+        padding: 20px 0;
+        &__content {
+            &--accordion-item {
+                padding: 16px;
+                .accordion-head {
+                    span {
+                        margin-right: 40px;
+                    }
+                    .icon {
+                        height: 21px;
+                        width: 21px;
+                        &-line {
+                            height: 3px;
+                        }
+                    }
+                }
+            }
+            &--additional-info {
+                h2 {
+                    margin: 20px 0;
+                }
+                a {
+                    margin-top: 30px;
+                }
+            }
+        }
+    }
+}

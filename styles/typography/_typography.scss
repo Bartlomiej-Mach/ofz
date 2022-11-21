@@ -1,0 +1,90 @@
+// Sizes
+
+
+$font-h1-desktop: 7.5rem;
+$font-h1-tablet: 5rem;
+$font-h1-mobile: 3.3rem;
+
+$font-h2-desktop: 5rem;
+$font-h2-tablet: 4rem;
+$font-h2-mobile: 2.8rem;
+
+$font-text: 2rem;
+$font-text-mobile: 1.8rem;
+
+// Weight
+
+$font-light: 300;
+$font-medium: 500;
+$font-bold: 700;
+
+// font family
+
+$font-main: 'Spline Sans', sans-serif;
+
+
+// baisic typography
+html { 
+    font-size: 10px; 
+}
+body {
+    font-family: $font-main;
+}
+
+h1 {
+    font-size: $font-h1-desktop;
+    font-weight: $font-bold;
+    line-height: $font-h1-desktop;
+    text-transform: uppercase;
+    color: $color-white;
+    @include break-point-down(tab) {
+        font-size: $font-h1-tablet;
+        line-height: $font-h1-tablet;
+    }
+    @include break-point-down(mb) {
+        font-size: $font-h1-mobile;
+        line-height: $font-h1-mobile;
+    }
+}
+
+h2 {
+    font-size: $font-h2-desktop;
+    line-height: $font-h2-desktop;
+    font-weight: $font-bold;
+    text-transform: uppercase;
+    @include break-point-down(tab) {
+        font-size: $font-h2-tablet;
+        line-height: $font-h2-tablet;
+    }
+    @include break-point-down(mb) {
+        font-size: $font-h2-mobile;
+        line-height: $font-h2-mobile;
+    }
+}
+
+
+span, p {
+    font-size: $font-text;
+    letter-spacing: 0.45px;
+    @include break-point-down(tab) {
+        font-size: $font-text-mobile;
+    }
+}
+
+a {
+    text-decoration: none;
+    font-size: $font-text;
+    font-weight: $font-bold;
+    @include break-point-down(mb) {
+        font-size: $font-text-mobile;
+    }
+}
+
+button {
+    font-size: $font-text;
+    font-weight: $font-bold;
+    font-family: $font-main;
+    @include break-point-down(mb) {
+        font-size: $font-text-mobile;
+    }
+}

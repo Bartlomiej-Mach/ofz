@@ -1,0 +1,53 @@
+body, html {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    scroll-behavior: smooth;
+    color: $color-dark;
+}
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.hidden {
+    display: none;
+}
+
+h2 {
+    position: relative;
+    padding: 2rem 0 2rem 4.5rem;
+    &::before {
+        width: 2rem;
+        height: 100%;
+        content: '';
+        left: 0;
+        background-color: $color-light-blue;
+        left: 0;
+        top: 0;
+        position: absolute;
+    }
+    @include break-point-down(mb) {
+        padding: 1.5rem 0 1.5rem 2.5rem; 
+        &::before {
+            width: 15px;
+        }
+    }    
+}
+
+
+// body::-webkit-scrollbar {
+//     width: 15px;
+//     background: $color-oragne-dark;
+//   }
+// body::-webkit-scrollbar-thumb {
+//     background: $color-orange;
+    
+// }
