@@ -1436,6 +1436,7 @@ h2::before {
 
 .faq-section__content--accordion-item {
   max-width: 1000px;
+  width: 100%;
   border: 2px solid #717171;
   border-radius: 15px;
   padding: 30px;

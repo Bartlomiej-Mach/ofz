@@ -6,6 +6,7 @@
         align-items: center;
         &--accordion-item {
             max-width: 1000px;
+            width: 100%;
             border: 2px solid $color-gray;
             border-radius: 15px;
             padding: 30px;
