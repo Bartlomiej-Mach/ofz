@@ -24,9 +24,7 @@ class Navigation {
                 this.mobileNavBg.classList.remove('mobile-bg--active'); 
             }
         });
-    }
-
-    
+    }    
 }
 
 let objNavigation = new Navigation();

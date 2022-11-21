@@ -152,7 +152,7 @@ h2::before {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  padding: 10px 15px;
+  padding: 15px 20px;
   background-color: #fff;
   color: #0F0F0F;
   display: -webkit-box;
@@ -443,6 +443,10 @@ h2::before {
   width: 100%;
   height: 100%;
   position: absolute;
+}
+
+.dashboard-section .img-2 {
+  background-image: url("../../assets/imgs/ofz/ofz-1.jpg");
 }
 
 .dashboard-section__text {
