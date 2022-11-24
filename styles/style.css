@@ -258,6 +258,10 @@ h2::before {
   margin-right: 3rem;
 }
 
+.nav-section__links--list li:nth-child(3) span {
+  color: #20A868;
+}
+
 .nav-section__links--list li span {
   text-transform: uppercase;
   color: #0F0F0F;
@@ -1131,6 +1135,10 @@ h2::before {
 .ofert-content-section__text p {
   margin-bottom: 10px;
   padding: 0 20px;
+}
+
+.ofert-content-section__text p a {
+  color: #0D9BFF;
 }
 
 .ofert-content-section__text .warning {
